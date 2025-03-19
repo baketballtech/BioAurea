@@ -43,6 +43,11 @@ body::-webkit-scrollbar{
     color: white;
     text-shadow: 0 0 2px black;
 }
+.li_temas:hover{
+    background-color: rgb(255, 126, 66);
+    border-radius: 10px;
+    transition: all 1s ease;
+}
 
 #img{
     width: 100%;
