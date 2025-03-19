@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+#cabeca{
+    width: 100%;
+    height: 100%;
+
+    background-color: aliceblue;
+    background-image: url("fundo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#temas{
+    padding: 5px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.288);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.li_temas{
+    display: inline-block;
+    padding: 10px;
+    margin: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+#img{
+    width: 100%;
+    height: 60%;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#img_bio{
+    width: 70%;
+    max-width: 400px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 70px;
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.384);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div#gel, #perfume, #maquiagem{
+    margin-top: 100px;
+}
+#texto{
+    margin: 10px;
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.todos{
+    text-align: center;
+    margin: 20px;
+}
+.img_gel{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gel_img{
+    width: 200px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 40px;
+    
+}
+
+.elemento{
+    display: inline-block;
+}
+.outros{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+
+}
+.outros_{
+    background-color: rgb(240, 230, 198);
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+footer{
+    margin-top: 200px;
+    padding: 10%;
+    background-color: bisque;
+}
+
+.membros{
+    margin: 20px;
+}
+ul{
+    display: inline-block;
+}
+#img_baixo{
+    width: 200px;
+}
+#texto_2{
+    width: 90%;
+    max-width: 500px;
+    display: inline-block;
+    margin-left: 20px;
+
+
+
+    
+}
+#centro_{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#centra{
+    margin-top: 50px;
+
+}
+#img_nos{
+    width: 100px;
+    background-color: rgba(128, 0, 0, 0.527);
+    display: inline;
+    border-radius: 20px;
+    margin-left: 30px;
+    
+
+}
+#h1_quem{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#local{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin: 10px;
+}
+li._local{
+    margin-top: 40px;
+}
+
+#model{
+    background-image: url("modelos_2.jpg");
+    background-size: contain;
+    border-radius: 50px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 10px;
+    box-shadow: 0 20px 10px rgba(12, 12, 12, 0.349);
+
+}
+#menu{
+    color: white;
+    margin: 5px;
+    font-size: 2em;
+    position: fixed;
+    z-index: 9999999;
+    background-color: rgb(128, 129, 129);
+    padding: 4px;
+    border-radius: 5px;
+    display: none;
+}
+
+@media (max-width:430px){
+    .elemento, #model{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #model{
+        margin-left: 0;
+        width: 98%;
+    }
+    #img_nos{
+        display: none;
+    }
+    #temas{
+        display: none;
+        height: 100%;
+        width: 80%;
+        background-color: rgba(248, 176, 82, 0.425);
+    }
+    .li_temas{
+        display: block;
+    }
+    #menu{
+        display: block;
+        color: white;
+        margin: 5px;
+        font-size: 2em;
+        position: fixed;
+        z-index: 99999;
+        background-color: rgb(128, 129, 129);
+        padding: 4px;
+        border-radius: 5px;
+    }
+    #p2{
+        margin-top: 90%;
+    }
+}
